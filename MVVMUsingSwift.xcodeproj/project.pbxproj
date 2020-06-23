@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		6AF4780A24A23B6500F62347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4780924A23B6500F62347 /* AppDelegate.swift */; };
 		6AF4780C24A23B6500F62347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4780B24A23B6500F62347 /* SceneDelegate.swift */; };
-		6AF4780E24A23B6500F62347 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4780D24A23B6500F62347 /* ViewController.swift */; };
 		6AF4781124A23B6600F62347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4780F24A23B6600F62347 /* Main.storyboard */; };
 		6AF4781324A23B7000F62347 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4781224A23B7000F62347 /* Assets.xcassets */; };
 		6AF4781624A23B7000F62347 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF4781424A23B7000F62347 /* LaunchScreen.storyboard */; };
+		6AF4782124A23C4D00F62347 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4782024A23C4D00F62347 /* Student.swift */; };
+		6AF4782324A23DB900F62347 /* StudentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4782224A23DB900F62347 /* StudentListViewController.swift */; };
+		6AF4782524A23DD600F62347 /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4782424A23DD600F62347 /* StudentListViewModel.swift */; };
+		6AF4782724A2404B00F62347 /* CellStudentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4782624A2404B00F62347 /* CellStudentList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6AF4780624A23B6500F62347 /* MVVMUsingSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMUsingSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF4780924A23B6500F62347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AF4780B24A23B6500F62347 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6AF4780D24A23B6500F62347 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6AF4781024A23B6600F62347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AF4781224A23B7000F62347 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AF4781524A23B7000F62347 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AF4781724A23B7000F62347 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF4782024A23C4D00F62347 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		6AF4782224A23DB900F62347 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
+		6AF4782424A23DD600F62347 /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		6AF4782624A2404B00F62347 /* CellStudentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellStudentList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		6AF4780824A23B6500F62347 /* MVVMUsingSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6AF4781D24A23B9C00F62347 /* ViewController */,
+				6AF4781E24A23BBC00F62347 /* ViewModel */,
+				6AF4781F24A23BF200F62347 /* Model */,
 				6AF4780924A23B6500F62347 /* AppDelegate.swift */,
 				6AF4780B24A23B6500F62347 /* SceneDelegate.swift */,
-				6AF4780D24A23B6500F62347 /* ViewController.swift */,
 				6AF4780F24A23B6600F62347 /* Main.storyboard */,
 				6AF4781224A23B7000F62347 /* Assets.xcassets */,
 				6AF4781424A23B7000F62347 /* LaunchScreen.storyboard */,
 				6AF4781724A23B7000F62347 /* Info.plist */,
 			);
 			path = MVVMUsingSwift;
+			sourceTree = "<group>";
+		};
+		6AF4781D24A23B9C00F62347 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6AF4782224A23DB900F62347 /* StudentListViewController.swift */,
+				6AF4782624A2404B00F62347 /* CellStudentList.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6AF4781E24A23BBC00F62347 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AF4782424A23DD600F62347 /* StudentListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6AF4781F24A23BF200F62347 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AF4782024A23C4D00F62347 /* Student.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AF4780E24A23B6500F62347 /* ViewController.swift in Sources */,
+				6AF4782524A23DD600F62347 /* StudentListViewModel.swift in Sources */,
+				6AF4782324A23DB900F62347 /* StudentListViewController.swift in Sources */,
 				6AF4780A24A23B6500F62347 /* AppDelegate.swift in Sources */,
+				6AF4782124A23C4D00F62347 /* Student.swift in Sources */,
 				6AF4780C24A23B6500F62347 /* SceneDelegate.swift in Sources */,
+				6AF4782724A2404B00F62347 /* CellStudentList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
